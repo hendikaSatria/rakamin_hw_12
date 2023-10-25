@@ -1,0 +1,29 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    background-color:bisque;
+}
+
+.custom-container {
+    @apply flex justify-center items-center h-screen;
+}
+
+.custom-grid {
+    @apply grid grid-cols-3;
+}
+
+.button {
+    @apply border-2 border-black bg-white text-black font-bold px-8 py-8 rounded-md transition-transform transform hover:scale-105;
+}
+
+.restart-button {
+    @apply border-2 border-black bg-white text-black font-bold px-8 py-8 rounded-md mt-5 transition-transform transform hover:scale-105;
+}
+
+.restart-button:hover {
+    @apply bg-green-100;
+    transform: scale(1.05);
+}
